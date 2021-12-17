@@ -1,0 +1,100 @@
+@use "../../scss/" as *;
+.cart__list {
+  p {
+    font-size: 0.9rem;
+  }
+}
+.cart__item {
+  display: flex;
+  padding: 20px 0;
+
+  &--left {
+    flex: 0;
+  }
+  &--right {
+    flex: 1;
+  }
+  &__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-right: 34px;
+
+    &__block {
+      display: block;
+    }
+    img {
+      display: block;
+      max-width: 140% !important;
+      transform: rotate(-28deg) translateY(-40px);
+      filter: drop-shadow(0 30px 20px rgba(0, 0, 0, 0.2));
+    }
+  }
+  &__name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    &__button {
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 100%;
+      background-color: #eee;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s;
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+    &__number {
+      font-size: 14px;
+      margin: 0 8px;
+      width: 20px;
+      text-align: center;
+    }
+  }
+  &__remove {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6c90e;
+    transition: 0.2s;
+    &:hover {
+      background-color: #f8d43f;
+      box-shadow: -2px 2px 4px rgb(0 0 0 / 15%);
+    }
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
