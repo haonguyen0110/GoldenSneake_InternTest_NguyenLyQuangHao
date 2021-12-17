@@ -2,7 +2,7 @@
 
 Golden Sneaker is a simple shopping cart project
 ![Screenshot](./src/assets/screenshot.jpg)
-
+[Link Deploy Heroku](https://golden-sneaker.herokuapp.com/)
 ## How to run Golden Sneaker project
 
 `Step 1:` You can clone this repositorie or download zip
